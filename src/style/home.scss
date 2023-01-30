@@ -1,0 +1,20 @@
+.home{
+    display:flex;
+    flex-direction:column;
+}
+.home-box-flat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 90px;
+    padding: 35px;
+    background-color: #F7F7F7;
+    border-radius:25px;
+    li {
+        height: 340px;
+        list-style-type: none;
+        margin: 10px;
+        max-width: 340px;
+        position: relative;
+    }
+}
