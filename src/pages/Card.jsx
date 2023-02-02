@@ -7,7 +7,6 @@ import Carrousel from "../components/Carrousel"
 import React from 'react'
 import '../style/Card.scss';
 
-
 function Card() {
 
     const id = useParams();
@@ -15,9 +14,7 @@ function Card() {
 
 
 
-    const [bool, setBool] = useState(false)
-
-
+    const [bool, setBool] = useState(false);
 
     const handleDropdown = (e) => {
         setBool(!bool)
@@ -43,20 +40,22 @@ function Card() {
                     </div>
                     <div className="propriétaire-rate">
                         <div className="information-prorietaire">
-                            <span className="nom-du proprio">{cardId.host.name}</span>
+                            <p className="nom-du proprio">{cardId.host.name}</p>
                             <img src={cardId.host.picture} alt="hôte" />
                         </div>
 
                     </div>
                 </section>
                 <div className="equipement-description">
-                    <span onClick={handleDropdown}>Description</span>
-                    {bool && <><div className="description">
-                        <p className="name-du-proprietaire"> texte aleatoire</p>
+                    <div className="dropdown">
+                        <h3> </h3>
+                        <span onClick={handleDropdown}>Description</span>
+                        {bool && <><div className="description">
+                            <p className="name-du-proprietaire"> texte aleatoire</p>
+                        </div>
+                            <div className="equipement">texte aleatoire
+                            </div></>}
                     </div>
-                        <div className="equipement">texte aleatoire
-                        </div></>}
-
                 </div>
             </div>
         </main>
