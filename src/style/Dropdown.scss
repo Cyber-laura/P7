@@ -1,0 +1,38 @@
+.dropdown{
+    width: 45%;
+}
+.header-dropdown{
+    background: #FF6060;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    h3{
+        padding-left: 15px;
+        color: white;
+        
+    }
+}
+.transition-dropdown{
+
+    transform-origin: top center;
+}
+.container-text-dropdown{
+    padding: 25px 20px;
+    background-color:  #F7F7F7;
+    border-radius: 10px;
+    color: #FF6060;
+    animation: displayDropdown .3s linear 1 forwards;
+    transform-origin: top center;
+    ul{
+        padding:0px
+    }
+    li{
+        list-style: none;
+    }
+}
+.fleche-dropdown{
+    margin-right: 10px;
+    
+}

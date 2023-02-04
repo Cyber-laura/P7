@@ -5,16 +5,17 @@
         border-radius: 25px;
         opacity:3.8;
         width:100%;
+        filter: brightness(0.8);
     }
     h1{
         color: white;
         font-weight: 500;
         position: absolute;
-        font-size: 48px;
+        font-size: 40px;
         top: 50%;
+        width: 100%;
         transform: translateY(-50%);
-        left: 165px;
-        margin: 0;
-        font-family:"montserrat", sans-serif;
+        margin: auto;
+        text-align: center;
     }
 }
