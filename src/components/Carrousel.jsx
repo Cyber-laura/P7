@@ -27,9 +27,11 @@ function Carrousel({ card }) {
 
     return (
         <div className="carrousel">
-            {
-                numberOfImages > 1 && <img className="vector-left" src={vectorLeft} alt="" onClick={handleNextDiapo} />
-            }
+            <span className="Container-Vector-left">
+                {
+                    numberOfImages > 1 && <img src={vectorLeft} alt="" onClick={handleNextDiapo} />
+                }
+            </span>
             {
                 card.map((elem, index) => {
                     return (
@@ -37,9 +39,11 @@ function Carrousel({ card }) {
                     )
                 })
             }
-            {
-                numberOfImages > 1 && <img className="vector-right" src={vectorRight} alt="" onClick={handlePreviousDiapo} />
-            }
+            <span className="Container-Vector-right">
+                {
+                    numberOfImages > 1 && <img src={vectorRight} alt="" onClick={handlePreviousDiapo} />
+                }
+            </span>
 
         </div>
     )
