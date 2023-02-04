@@ -5,7 +5,6 @@ function Banner({ image, text }) {
     return (
         <section className="Banner-box">
             <img src={image} alt="Banniere" />
-            <div></div>
             <h1>{text}</h1>
         </section>
     );
