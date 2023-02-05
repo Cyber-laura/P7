@@ -27,7 +27,7 @@ function Dropdown({ titre, description }) {
         <div className="dropdown">
             <div className="header-dropdown">
                 <h3>{titre}</h3>
-                <span className="fleche-dropdown fleche-dropdown-active" onClick={handleDropdown}>
+                <span className={`fleche-dropdown ${bool ? 'fleche-dropdown-active' : 'fleche-dropdown-inactive'}`} onClick={handleDropdown}>
                     <img src={vectorDrop} alt="" />
                 </span>
             </div>

@@ -36,3 +36,14 @@
     margin-right: 10px;
     
 }
+.fleche-dropdown.fleche-dropdown-active img {
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+    width: 25px;
+}
+
+.fleche-dropdown.fleche-dropdown-inactive img {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+    width: 25px;
+}
