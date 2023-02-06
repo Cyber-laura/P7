@@ -1,0 +1,120 @@
+.fiche{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0px 90px 0px 90px;
+    @media screen and (max-width:600px){
+        margin: 0px 20px 0px 20px;
+    }
+}
+.container-info-hôtes{
+    padding: 20px 90px 20px 90px;
+    @media screen and (max-width:600px){
+        padding: 20px;
+    }
+}
+
+
+.section-info-hôte{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    @media screen and (max-width:800px){
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+
+.info-logement{
+    h1{
+        font-size: 36px;
+        font-weight: 500;
+        color: #FF6060;
+        padding: 0;
+        margin: 0;
+        @media screen and (max-width:600px){
+            font-size:revert;
+        }
+    }
+    h2{
+        font-size: 18px;
+        color: #FF6060;
+        font-weight: 500;
+        padding: 0;
+        margin: 0;
+        @media screen and (max-width:600px){
+            font-size:15px;
+        }
+    }
+}
+.tag{
+    margin-top:20px;
+    display:flex;
+    flex-wrap: wrap;
+    span{
+    margin-bottom: 10px;
+    margin-right: 11px;
+    background-color: #FF6060;
+    color: white;
+    padding: 3px 31px;
+    border-radius: 10px;
+    @media screen and (max-width:800px){
+        padding:3px 16px;
+    }
+    @media screen and (max-width:600px){
+        font-size:10px;
+    }
+
+    }
+
+}
+.propriétaire-rate{
+    @media screen and (max-width:800px){
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top:10px;
+    }
+}
+.information-prorietaire{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    @media screen and (max-width:600px){
+        font-size:10px;
+        font-weight: 500;
+    }
+    p{
+        margin-right: 15px;
+        color: #FF6060;
+        font-size: larger;
+        max-width: 80px;
+        text-align: right;
+    }
+    img{
+        border-radius: 100%;
+        width: 75px;
+        @media screen and (max-width:600px){
+            width: 50px;
+        }
+    }
+
+}
+.rate{
+    position:absolute;
+    @media screen and (max-width:800px){
+        position: initial;
+    }
+
+}
+.equipement-description{
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width:800px){
+        flex-direction:column;
+        margin-bottom: 15px;
+    }
+    
+}

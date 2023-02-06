@@ -14,7 +14,7 @@
 }
 .carrousel{
     position: relative;
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
@@ -22,10 +22,20 @@
     position:absolute;
     right:25px;
     top:40%;
+    img{
+        @media screen and (max-width:600px){
+            width:25px;
+        }
+    }
 }
 
 .Container-Vector-right{
     position:absolute;
     left:25px;
     top:40%;
+    img{
+        @media screen and (max-width:600px){
+            width:25px;
+        }
+    }
 }

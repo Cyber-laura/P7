@@ -1,5 +1,9 @@
 .dropdown{
     width: 45%;
+    @media  screen and (max-width:800px){
+        margin-bottom: 15px;
+        width: 100%;
+    }
 }
 .header-dropdown{
     background: #FF6060;
@@ -8,9 +12,15 @@
     justify-content: space-between;
     border-radius: 10px;
     align-items: center;
+    @media  screen and (max-width:600px){
+        height:40px;
+        font-size:13px;
+    }
+    
     h3{
         padding-left: 15px;
         color: white;
+        font-weight: 500;
         
     }
 }
@@ -40,10 +50,16 @@
     transform: rotate(0deg);
     transition: transform 0.3s;
     width: 25px;
+    @media  screen and (max-width:600px){
+        width: 15px;
+    }
 }
 
 .fleche-dropdown.fleche-dropdown-inactive img {
     transform: rotate(180deg);
     transition: transform 0.3s;
     width: 25px;
+    @media  screen and (max-width:600px){
+        width: 15px;
+    }
 }

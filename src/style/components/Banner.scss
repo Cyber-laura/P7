@@ -1,0 +1,32 @@
+.Banner-box{
+    position: relative;
+    align-self: center;
+    margin: 45px 90px 0px 90px;
+    @media screen and (max-width: 600px) {
+        margin: 10px 20px 0px 20px;
+      }
+    img{
+        border-radius: 20px;
+        opacity:3.8;
+        width:100%;
+        filter: brightness(0.8);
+        @media screen and (max-width:800px){
+            height:150px;
+            object-fit: cover;
+        }
+    }
+    h1{
+        color: white;
+        font-weight: 400;
+        position: absolute;
+        font-size: 40px;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+        margin: auto;
+        text-align: center;
+        @media screen and (max-width:800px){
+            font-size:25px;
+        }
+    }
+}
