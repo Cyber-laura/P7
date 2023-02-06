@@ -24,10 +24,9 @@ function Carrousel({ card }) {
         }
     }
 
-
     return (
-        <div className="carrousel">
-            <span className="Container-Vector-left">
+        <div className="container-carrousel">
+            <span className="container-vector-left">
                 {
                     numberOfImages > 1 && <img src={vectorLeft} alt="" onClick={handleNextDiapo} />
                 }
@@ -39,7 +38,7 @@ function Carrousel({ card }) {
                     )
                 })
             }
-            <span className="Container-Vector-right">
+            <span className="container-vector-right">
                 {
                     numberOfImages > 1 && <img src={vectorRight} alt="" onClick={handlePreviousDiapo} />
                 }

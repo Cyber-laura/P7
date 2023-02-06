@@ -20,13 +20,11 @@ function Card() {
         return <Error />
     }
 
-
     return (
         <>
             <section className="fiche">
                 <Carrousel card={cardId.pictures} />
             </section>
-
             <div className="container-info-hôtes">
                 <section className="section-info-hôte">
                     <div className="info-logement">
@@ -45,8 +43,6 @@ function Card() {
                             <img src={cardId.host.picture} alt="hôte" />
                         </div>
                         <div className="rate">
-                            <div className='stars-contener2'>
-                            </div>
                             <Rate>rating={cardId.rating}</Rate>
                         </div>
 

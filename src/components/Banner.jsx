@@ -3,7 +3,7 @@ import React from 'react';
 
 function Banner({ image, text }) {
     return (
-        <section className="Banner-box">
+        <section className="banner-box">
             <img src={image} alt="Banniere" />
             <h1>{text}</h1>
         </section>

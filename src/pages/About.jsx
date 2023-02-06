@@ -6,7 +6,7 @@ import '../style/pages/_About.scss'
 
 function About() {
     return (
-        <div className="About">
+        <div className="container-about">
             <Banner image={bannerMontagne} className="banner-about" />
             <section className="section-banner-about">
                 <Dropdown titre="Fiabilité" description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."></Dropdown>

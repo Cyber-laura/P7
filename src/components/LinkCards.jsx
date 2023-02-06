@@ -7,7 +7,7 @@ function Card(cards) {
         <Link to={`/card/${cards.id}`}>
             <div className='cards-flat'>
                 <img src={cards.imageURL} alt={cards.title} />
-                <p className='cards-flat-title'>{cards.title}</p>
+                <p>{cards.title}</p>
             </div>
         </Link>
     )

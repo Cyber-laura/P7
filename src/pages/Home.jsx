@@ -7,12 +7,9 @@ import cards from '../datas/data'
 import LinkCards from '../components/LinkCards'
 
 
-
-
-
 function Home() {
   return (
-    <div className="home">
+    <div className="container-home">
       <Banner image={bannerForet} text="Chez vous, partout et ailleurs" />
       <ul className="home-box-flat">
         {cards.map((elem, index) => {

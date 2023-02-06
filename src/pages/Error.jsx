@@ -7,7 +7,7 @@ function Error() {
     return (
         <div className="container-error">
             <img src={ErrorImg} alt="" />
-            <p className="error-p"> Oups! La page que vous demandez n'existe pas.</p>
+            <p> Oups! La page que vous demandez n'existe pas.</p>
             <NavLink to="/" className="error-navlink">Retourner sur la page d'accueil</NavLink>
         </div>
     )

@@ -1,6 +1,36 @@
 @import '../variables.scss';
 @import '../mixins.scss';
 
+.container-carrousel {
+    position: relative;
+    width: $width-100;
+    height: auto;
+}
+
+.container-vector-left {
+    position: absolute;
+    right: 25px;
+    top: 40%;
+
+    img {
+        @include mobile-only {
+            width: 25px;
+        }
+    }
+}
+
+.container-vector-right {
+    position: absolute;
+    left: 25px;
+    top: 40%;
+
+    img {
+        @include mobile-only {
+            width: 25px;
+        }
+    }
+}
+
 .carrousel-img-actif {
     display: block;
     border-radius: $border-radius-25;
@@ -17,32 +47,5 @@
     width: $width-100
 }
 
-.carrousel {
-    position: relative;
-    width: $width-100;
-    height: auto;
-}
 
-.Container-Vector-left {
-    position: absolute;
-    right: 25px;
-    top: 40%;
 
-    img {
-        @include mobile-only {
-            width: 25px;
-        }
-    }
-}
-
-.Container-Vector-right {
-    position: absolute;
-    left: 25px;
-    top: 40%;
-
-    img {
-        @include mobile-only {
-            width: 25px;
-        }
-    }
-}
