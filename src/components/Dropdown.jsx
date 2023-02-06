@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import vectorDrop from '../assets/vector-drop.png';
 
-import '../style/Dropdown.scss'
+import '../style/components/Dropdown.scss'
 
 function Dropdown({ titre, description }) {
     const [bool, setBool] = useState(false);
@@ -25,9 +25,9 @@ function Dropdown({ titre, description }) {
 
     return (
         <div className="dropdown">
-            <div className="header-dropdown">
+            <div className="header-dropdown" onClick={handleDropdown}>
                 <h3>{titre}</h3>
-                <span className={`fleche-dropdown ${bool ? 'fleche-dropdown-active' : 'fleche-dropdown-inactive'}`} onClick={handleDropdown}>
+                <span className={`fleche-dropdown ${bool ? 'fleche-dropdown-active' : 'fleche-dropdown-inactive'}`}>
                     <img src={vectorDrop} alt="" />
                 </span>
             </div>

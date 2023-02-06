@@ -2,6 +2,8 @@ import etoile from "../assets/etoile.png"
 import etoileVide from "../assets/etoileVide.png"
 import React, { useState, useEffect } from 'react';
 
+import "../style/components/Rate.scss"
+
 const Rate = ({ rating }) => {
     console.log(rating);
     const [starArray, setStarArray] = useState(Array(5).fill(0));
@@ -18,7 +20,7 @@ const Rate = ({ rating }) => {
     }, [rating]);
 
     return (
-        <div className='stars-contener'>
+        <div className='container-rate'>
             {starArray.map((star, index) => {
                 return (
                     <img

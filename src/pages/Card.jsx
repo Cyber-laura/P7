@@ -8,7 +8,7 @@ import Error from '../pages/Error'
 import Rate from '../components/Rate'
 
 import React from 'react'
-import '../style/Card.scss';
+import '../style/pages/Card.scss';
 
 
 function Card() {

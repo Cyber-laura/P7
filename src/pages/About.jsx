@@ -2,7 +2,7 @@ import Banner from '../components/Banner'
 import bannerMontagne from '../assets/banner-montagne.png';
 import Dropdown from '../components/Dropdown';
 
-import '../style/About.scss'
+import '../style/pages/About.scss'
 
 function About() {
     return (
