@@ -1,1 +1,22 @@
-$color-1:#FF6060;
+$color-primary:#FF6060;
+$color-secondary:#FFFFFF;
+$color-ternary:#F7F7F7;
+
+$font-weight-500:500;
+$font-weight-400:400;
+
+$font-size-10:10px;
+$font-size-20:20px;
+
+$width-100:100%;
+
+$border-radius-10:10px;
+$border-radius-25:25px;
+
+$padding-none:0px;
+
+$breakpoints:(
+    mobile:600px,
+    tablette:800px,
+    desktop:986px,
+)

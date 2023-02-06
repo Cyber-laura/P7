@@ -1,0 +1,48 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.carrousel-img-actif {
+    display: block;
+    border-radius: $border-radius-25;
+    height: 400px;
+    object-fit: cover;
+    width: $width-100;
+
+}
+
+.carrousel-img {
+    border-radius: 15px;
+    object-fit: cover;
+    display: none;
+    width: $width-100
+}
+
+.carrousel {
+    position: relative;
+    width: $width-100;
+    height: auto;
+}
+
+.Container-Vector-left {
+    position: absolute;
+    right: 25px;
+    top: 40%;
+
+    img {
+        @include mobile-only {
+            width: 25px;
+        }
+    }
+}
+
+.Container-Vector-right {
+    position: absolute;
+    left: 25px;
+    top: 40%;
+
+    img {
+        @include mobile-only {
+            width: 25px;
+        }
+    }
+}

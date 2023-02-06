@@ -1,4 +1,4 @@
-import '../style/components/LinkCards.scss';
+import '../style/components/_LinkCards.scss';
 
 import { Link } from 'react-router-dom'
 

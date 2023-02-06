@@ -1,6 +1,6 @@
 import bannerForet from '../assets/banner-foret.png';
 
-import '../style/pages/home.scss'
+import '../style/pages/_home.scss'
 
 import Banner from '../components/Banner'
 import cards from '../datas/data'

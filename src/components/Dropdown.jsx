@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import vectorDrop from '../assets/vector-drop.png';
 
-import '../style/components/Dropdown.scss'
+import '../style/components/_Dropdown.scss'
 
 function Dropdown({ titre, description }) {
     const [bool, setBool] = useState(false);

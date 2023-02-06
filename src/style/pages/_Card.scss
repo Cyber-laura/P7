@@ -1,0 +1,138 @@
+@import '../variables.scss';
+@import '../extend.scss';
+@import '../mixins.scss';
+
+
+.fiche {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0px 90px 0px 90px;
+
+    @include mobile-only {
+        margin: 0px 20px 0px 20px;
+    }
+}
+
+.container-info-hôtes {
+    padding: 20px 90px 20px 90px;
+
+    @include mobile-only {
+        padding: 20px;
+    }
+}
+
+
+.section-info-hôte {
+    margin-bottom: 25px;
+    @extend .flexbox-space-between;
+    
+    @include tablette-only {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+
+.info-logement {
+    h1 {
+        font-size: 36px;
+        @extend .typography;
+
+        @include mobile-only {
+            font-size: revert;
+        }
+    }
+
+    h2 {
+        font-size: 18px;
+        @extend .typography;
+
+        @include mobile-only {
+            font-size: 15px;
+        }
+    }
+}
+
+.tag {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    span {
+        margin-bottom: 10px;
+        margin-right: 11px;
+        padding: 3px 31px;
+        background-color: $color-primary;
+        color: $color-secondary;
+        border-radius: $border-radius-10;
+
+        @include tablette-only {
+            padding: 3px 16px;
+        }
+
+        @include mobile-only {
+            font-size: $font-size-10;
+        }
+
+    }
+
+}
+
+.propriétaire-rate {
+    @include tablette-only {
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+}
+
+.information-prorietaire {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+
+    @include mobile-only {
+        font-size: $font-size-10;
+        font-weight: $font-weight-500;
+    }
+
+    p {
+        margin-right: 15px;
+        color: $color-primary;
+        font-size: larger;
+        max-width: 80px;
+        text-align: right;
+    }
+
+    img {
+        border-radius: 100%;
+        width: 75px;
+
+        @include mobile-only {
+            width: 50px;
+        }
+    }
+
+}
+
+.rate {
+    position: absolute;
+
+    @include tablette-only {
+        position: initial;
+    }
+
+}
+
+.equipement-description {
+    @extend .flexbox-space-between;
+
+    @include tablette-only {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+}

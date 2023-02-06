@@ -2,7 +2,7 @@ import etoile from "../assets/etoile.png"
 import etoileVide from "../assets/etoileVide.png"
 import React, { useState, useEffect } from 'react';
 
-import "../style/components/Rate.scss"
+import "../style/components/_Rate.scss"
 
 const Rate = ({ rating }) => {
     console.log(rating);

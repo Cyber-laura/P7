@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import ErrorImg from "../assets/404.png"
 
-import '../style/pages/Error.scss'
+import '../style/pages/_Error.scss'
 
 function Error() {
     return (

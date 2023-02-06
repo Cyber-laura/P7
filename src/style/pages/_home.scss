@@ -1,0 +1,41 @@
+@import '../variables.scss';
+@import '../extend.scss';
+@import '../mixins.scss';
+
+.home {
+    @extend .flexbox-direction-column;
+}
+
+.home-box-flat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 90px;
+    padding: 35px;
+    background-color: $color-ternary;
+    border-radius: $border-radius-25;
+
+    @include desktop-only {
+        flex-direction: column;
+        padding: $padding-none;
+        background-color: $color-secondary;
+    }
+
+    @include mobile-only {
+        margin: 15px 20px 0px 20px;
+    }
+
+    li {
+        height: 340px;
+        margin: 10px;
+        max-width: 340px;
+        list-style-type: none;
+        position: relative;
+
+        @include desktop-only {
+            max-width: none;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+}

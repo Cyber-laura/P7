@@ -1,0 +1,11 @@
+@import '../mixins.scss';
+
+.container-rate {
+    margin-top: 10px;
+
+    img {
+        @include mobile-only {
+            width: 20px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.Banner-box {
+    position: relative;
+    align-self: center;
+    margin: 45px 90px 0px 90px;
+
+    @include mobile-only {
+        margin: 10px 20px 0px 20px;
+    }
+
+    img {
+        border-radius: $border-radius-25;
+        width: $width-100;
+        filter: brightness(0.8);
+
+        @include tablette-only {
+            height: 150px;
+            object-fit: cover;
+            border-radius: $border-radius-10;
+        }
+    }
+
+    h1 {
+        color: $color-secondary;
+        font-weight: $font-weight-400;
+        position: absolute;
+        font-size: 40px;
+        top: 50%;
+        width: $width-100;
+        transform: translateY(-50%);
+        margin: auto;
+        text-align: center;
+
+        @include tablette-only {
+            font-size: 25px;
+        }
+    }
+}

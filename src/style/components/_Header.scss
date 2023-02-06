@@ -1,0 +1,47 @@
+@import '../variables.scss';
+@import '../extend.scss';
+@import '../mixins.scss';
+
+header {
+    align-items: center;
+    padding: 15px 90px 5px 50px;
+    @extend .flexbox-space-between;
+
+    @include tablette-only {
+        padding: 15px 90px 5px 80px;
+    }
+
+    @include mobile-only {
+        padding: 15px 20px 5px 10px
+    }
+
+    img {
+        cursor: pointer;
+        width: 145px;
+        height: 47px;
+    }
+}
+
+header a {
+    color: $color-primary;
+    font-size: 24px;
+    font-weight: $font-weight-500;
+    margin-left: 40px;
+
+    @include tablette-only {
+        font-size: initial;
+        margin-left: 10px;
+    }
+
+}
+
+header ul {
+    display: flex;
+    padding: $padding-none;
+
+}
+
+header li {
+    list-style: none;
+
+}

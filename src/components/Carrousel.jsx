@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import vectorLeft from "../assets/VectorLeft.png"
 import vectorRight from "../assets/VectorRight.png"
-import '../style/components/Carrousel.scss';
+import '../style/components/_Carrousel.scss';
 
 function Carrousel({ card }) {
 

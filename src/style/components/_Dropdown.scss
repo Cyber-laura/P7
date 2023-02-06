@@ -1,0 +1,78 @@
+@import '../variables.scss';
+@import '../extend.scss';
+@import '../mixins.scss';
+
+.dropdown {
+    width: 45%;
+
+    @include tablette-only {
+        margin-bottom: 15px;
+        width: $width-100;
+    }
+}
+
+.header-dropdown {
+    cursor: pointer;
+    align-items: center;
+    background: $color-primary;
+    border-radius: $border-radius-10;
+    @extend .flexbox-space-between;
+
+    @include mobile-only {
+        height: 40px;
+        font-size: 13px;
+    }
+
+    h3 {
+        padding-left: 15px;
+        color: $color-secondary;
+        font-weight: $font-weight-500;
+
+    }
+}
+
+.transition-dropdown {
+    transform-origin: top center;
+}
+
+.container-text-dropdown {
+    padding: 25px 20px;
+    background-color: $color-ternary;
+    border-radius: $border-radius-10;
+    color: $color-primary;
+    animation: displayDropdown .3s linear 1 forwards;
+    transform-origin: top center;
+
+    ul {
+        padding: $padding-none;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+.fleche-dropdown {
+    margin-right: 10px;
+
+}
+
+.fleche-dropdown.fleche-dropdown-active img {
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+    width: 25px;
+
+    @include mobile-only {
+        width: 15px;
+    }
+}
+
+.fleche-dropdown.fleche-dropdown-inactive img {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+    width: 25px;
+
+    @include mobile-only {
+        width: 15px;
+    }
+}
