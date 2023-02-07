@@ -1,6 +1,6 @@
-import '../style/components/_LinkCards.scss';
-
 import { Link } from 'react-router-dom'
+
+import '../style/components/_LinkCards.scss';
 
 function Card(cards) {
     return (
@@ -12,4 +12,4 @@ function Card(cards) {
         </Link>
     )
 }
-export default Card
+export default Card;

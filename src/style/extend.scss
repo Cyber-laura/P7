@@ -1,17 +1,18 @@
 @import './variables.scss';
 
-.typography{
-        color: $color-primary;
-        font-weight: $font-weight-500;
-        padding: $padding-none;
-        margin: 0;
+.typography {
+    color: $color-primary;
+    font-weight: $font-weight-500;
+    padding: $padding-none;
+    margin: 0;
 }
 
-.flexbox-space-between{
-    display:flex;
+.flexbox-space-between {
+    display: flex;
     justify-content: space-between;
 }
-.flexbox-direction-column{
-    display:flex;
+
+.flexbox-direction-column {
+    display: flex;
     flex-direction: column;
 }

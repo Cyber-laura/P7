@@ -1,18 +1,26 @@
 @import './variables.scss';
 
 
-@mixin mobile-only{
-    @media screen and (max-width: map-get($breakpoints, mobile)){
+@mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
         @content
     }
-};
-@mixin tablette-only{
-    @media screen and (max-width: map-get($breakpoints, tablette)){
+}
+
+;
+
+@mixin tablette-only {
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
         @content
     }
-};
-@mixin desktop-only{
-    @media screen and (max-width: map-get($breakpoints, desktop)){
+}
+
+;
+
+@mixin desktop-only {
+    @media screen and (max-width: map-get($breakpoints, desktop)) {
         @content
     }
-};
+}
+
+;

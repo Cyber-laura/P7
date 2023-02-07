@@ -1,17 +1,15 @@
-import bannerForet from '../assets/banner-foret.png';
-
+import cards from '../datas/data'
+import Banner from '../components/Banner'
+import LinkCards from '../components/LinkCards'
 import '../style/pages/_home.scss'
 
-import Banner from '../components/Banner'
-import cards from '../datas/data'
-import LinkCards from '../components/LinkCards'
-
+import bannerForet from '../assets/banner-foret.png';
 
 function Home() {
   return (
-    <div className="container-home">
+    <div className='container-home'>
       <Banner image={bannerForet} text="Chez vous, partout et ailleurs" />
-      <ul className="home-box-flat">
+      <ul className='home-box-flat'>
         {cards.map((elem, index) => {
           return (
             <li key={elem.id}>
@@ -22,6 +20,4 @@ function Home() {
     </div>
   );
 }
-
-
-export default Home
+export default Home;

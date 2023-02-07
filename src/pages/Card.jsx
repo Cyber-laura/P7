@@ -1,15 +1,12 @@
-import cards from '../datas/data'
+import React from 'react'
 import { useParams } from "react-router-dom"
 
-
+import cards from '../datas/data'
+import Error from '../pages/Error'
 import Carrousel from "../components/Carrousel";
 import Dropdown from '../components/Dropdown';
-import Error from '../pages/Error'
 import Rate from '../components/Rate'
-
-import React from 'react'
 import '../style/pages/_Card.scss';
-
 
 function Card() {
 
@@ -43,9 +40,8 @@ function Card() {
                             <img src={cardId.host.picture} alt="hôte" />
                         </div>
                         <div className="rate">
-                            <Rate>rating={cardId.rating}</Rate>
+                            <Rate rating={cardId.rating} />
                         </div>
-
                     </div>
                 </section>
                 <div className="equipement-description">
@@ -58,6 +54,4 @@ function Card() {
     )
 
 }
-
-
-export default Card
+export default Card;

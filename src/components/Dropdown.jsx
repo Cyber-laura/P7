@@ -1,10 +1,11 @@
 import { useState } from 'react';
 
-import vectorDrop from '../assets/vector-drop.png';
-
 import '../style/components/_Dropdown.scss'
 
+import vectorDrop from '../assets/vector-drop.png';
+
 function Dropdown({ titre, description }) {
+
     const [bool, setBool] = useState(false);
 
     const handleDropdown = () => {
@@ -24,16 +25,15 @@ function Dropdown({ titre, description }) {
     };
 
     return (
-        <div className="dropdown">
-            <div className="header-dropdown" onClick={handleDropdown}>
+        <div className='dropdown'>
+            <div className='header-dropdown' onClick={handleDropdown}>
                 <h3>{titre}</h3>
                 <span className={`fleche-dropdown ${bool ? 'fleche-dropdown-active' : 'fleche-dropdown-inactive'}`}>
-                    <img src={vectorDrop} alt="" />
+                    <img src={vectorDrop} alt='' />
                 </span>
             </div>
-            {bool && <div className="container-text-dropdown transition-dropdown">{renderDescription()}</div>}
+            {bool && <div className='container-text-dropdown transition-dropdown'>{renderDescription()}</div>}
         </div>
     );
 }
-
 export default Dropdown;

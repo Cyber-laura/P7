@@ -63,6 +63,7 @@
     color: $color-primary;
     animation: displayDropdown .3s linear 1 forwards;
     transform-origin: top center;
+    height:80%;
     
     ul {
         padding: $padding-none;

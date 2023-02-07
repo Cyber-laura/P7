@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 
-import vectorLeft from "../assets/VectorLeft.png"
-import vectorRight from "../assets/VectorRight.png"
 import '../style/components/_Carrousel.scss';
+
+import vectorLeft from '../assets/VectorLeft.png';
+import vectorRight from '../assets/VectorRight.png';
 
 function Carrousel({ card }) {
 
@@ -25,10 +26,10 @@ function Carrousel({ card }) {
     }
 
     return (
-        <div className="container-carrousel">
-            <span className="container-vector-left">
+        <div className='container-carrousel'>
+            <span className='container-vector-left'>
                 {
-                    numberOfImages > 1 && <img src={vectorLeft} alt="" onClick={handleNextDiapo} />
+                    numberOfImages > 1 && <img src={vectorLeft} alt='' onClick={handleNextDiapo} />
                 }
             </span>
             {
@@ -38,7 +39,7 @@ function Carrousel({ card }) {
                     )
                 })
             }
-            <span className="container-vector-right">
+            <span className='container-vector-right'>
                 {
                     numberOfImages > 1 && <img src={vectorRight} alt="" onClick={handlePreviousDiapo} />
                 }
@@ -48,5 +49,4 @@ function Carrousel({ card }) {
     )
 
 }
-
 export default Carrousel;
