@@ -27,6 +27,7 @@ function Carrousel({ card }) {
 
     return (
         <div className='container-carrousel'>
+            <div className='carrousel-counter'>{pictures + 1}/{numberOfImages}</div>
             <span className='container-vector-left'>
                 {
                     numberOfImages > 1 && <img src={vectorLeft} alt='' onClick={handleNextDiapo} />

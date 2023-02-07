@@ -7,6 +7,19 @@
     height: auto;
 }
 
+.carrousel-counter {
+    position: absolute;
+    font-weight: $font-weight-500;
+    color: $color-secondary;
+    bottom: 0;
+    left: 50%;
+    font-size: 18px;
+
+    @include mobile-only {
+        font-size: 15px;
+    }
+}
+
 .container-vector-left {
     position: absolute;
     right: 25px;
@@ -46,6 +59,3 @@
     display: none;
     width: $width-100
 }
-
-
-
