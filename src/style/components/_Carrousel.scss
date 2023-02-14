@@ -1,5 +1,6 @@
 @import '../variables.scss';
 @import '../mixins.scss';
+@import '../extend.scss';
 
 .container-carrousel {
     position: relative;
@@ -21,9 +22,8 @@
 }
 
 .container-vector-left {
-    position: absolute;
+    @extend .position-vector;
     right: 25px;
-    top: 40%;
 
     img {
         @include mobile-only {
@@ -33,9 +33,8 @@
 }
 
 .container-vector-right {
-    position: absolute;
+    @extend .position-vector;
     left: 25px;
-    top: 40%;
 
     img {
         @include mobile-only {

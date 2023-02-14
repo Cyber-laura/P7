@@ -4,15 +4,15 @@
 
 header {
     align-items: center;
-    padding: 15px 90px 5px 50px;
+    padding: 15px 90px 10px 50px;
     @extend .flexbox-space-between;
 
     @include tablette-only {
-        padding: 15px 90px 5px 80px;
+        padding: 15px 90px 10px 80px;
     }
 
     @include mobile-only {
-        padding: 15px 20px 5px 10px
+        padding: 15px 20px 10px 10px
     }
 
     img {
@@ -32,12 +32,19 @@ header a {
         font-size: initial;
         margin-left: 10px;
     }
+    @include mobile-only {
+        font-size: 12px;
+    }
 
 }
 
 header ul {
     display: flex;
     padding: $padding-none;
+
+    @include mobile-only {
+        text-transform: uppercase;
+    }
 
 }
 

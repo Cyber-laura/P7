@@ -2,10 +2,15 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: auto;
-    max-width: 1420px;
+    margin:0;
 }
 
 * {
     box-sizing: border-box;
+}
+
+div#root>*:not(footer){
+    margin: auto;
+    max-width: 1420px;
+    width: 100%;
 }

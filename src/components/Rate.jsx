@@ -6,7 +6,7 @@ import etoile from '../assets/etoile.png';
 import etoileVide from '../assets/etoileVide.png';
 
 function Rate({ rating }) {
-    console.log(rating);
+
     const [starArray, setStarArray] = useState(Array(5).fill(0));
 
     useEffect(() => {
