@@ -17,7 +17,7 @@
     font-size: 18px;
 
     @include mobile-only {
-        font-size: 15px;
+        display:none;
     }
 }
 
